@@ -1,0 +1,78 @@
+<html>
+<head>
+	<title>Smdrive</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script type="text/javascript">
+	var v;
+	jQuery(document).ready(function( $ ){
+		var uls = $('#pt2 div #opts');
+		v = uls;
+		uls.hide();
+		$(v).click(function( e ){
+			console.log("aqui");
+			console.log(this.value);
+		});
+		$('#pt2 > div > a').click(function( e ){
+			console.log("Clicked button Novo");
+			e.stopPropagation();
+			if(uls[0].style.display=="none"){
+				uls.show();
+			}else{
+				uls.hide();
+			}
+			
+			//v = $( "#pt2" ).find(' option');
+			
+		});
+		$('.myButton').click(function( e ){
+			e.stopPropagation();
+		});
+		$('body').click(function(){
+			uls.hide();
+		});
+	});
+	</script>
+</head>
+<body>
+	<header>
+	<div id="pt1">
+		<a href="#"><img src="recorte.png" alt="Smdrive"></a>
+		<form>
+			<input type="text">
+		</form>
+	</div>
+	<div id="pt2">
+		<div id="buttonNovo">
+			<a href="#" class="myButton">Novo</a>
+			<div id ="opts">
+				<option value="NPasta">Nova Pasta</option>
+				<option value="NArq">Upload de arquivo</option>	
+			</div>
+			
+		</div>
+		<div id="caminho">
+			<h1 align=""><a href="#">Migalha</a>><a href="#">1</a>><a href="#">2</a>><a href="#">3</a></h1>
+		</div>
+	</div>
+	</header>
+
+	<div id="header">
+	</div>
+
+	<section id="menu">
+		<div>
+			<a href="#">Documentos</a><br>
+			<a href="#">Compartilhado comigo</a><br>
+			<a href="#">Smdrive</a><br>
+		</div>
+	</section>
+
+	<section id="body">
+	<h1>Smdrive</h1>
+	</section>
+	<script type="text/javascript">
+		document.getElementById("header").style.height = document.getElementsByTagName("header")[0].offsetHeight;
+	</script>
+</body>
+</html>

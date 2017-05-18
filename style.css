@@ -1,0 +1,89 @@
+*{margin:0px;}
+#body,body{
+	width:100%;
+}
+#body,body{
+	background-color: #EBEBEB;
+}
+#opts{
+	height: auto;
+	width: auto;
+	background-color: #fff;
+}
+
+a:link, option{
+text-decoration:none;color:#145D7F;
+}
+a:visited , option{
+color:#145D7F;
+}
+a:hover , option:hover{
+color:#29BBFF;
+}
+.myButton{
+	background-color: #29bbff;
+    
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 20px;
+}
+.myButton:hover{
+	border: 2px solid #29bbff;
+	background-color: white;
+	color: #29bbff;
+}
+
+header,#header{
+	height: 20%;
+	width: 100%;
+	background-color: #fff;
+}
+header{
+	position: fixed;
+	display: table;
+}
+header #pt1{
+	height: 50%;
+}
+header #pt2 #buttonNovo{
+	float:left;
+	margin-left: 2% ; 
+	margin-right: 8% ;  
+
+}
+header #pt2 #caminho{
+	float:left;
+	margin-left: 5% ; 
+	margin-right: 5% ; 
+}
+header #pt1 img{
+	width:15%;
+	height:50%;
+	float: left;
+	margin-left: 2% ; 
+	margin-right: 3% ; 
+}
+#body{
+	height: 100%;
+	width: 80%;
+	float: left;
+}
+#menu{
+	width: 20%;
+	height: 100%;
+	//background-color:#C1C1C1; 
+	float:left;
+}
+#menu div{
+	margin-top:5%; 
+	margin-left:5%; 
+}
+#menu div a{
+	margin-bottom: 1.5%;
+	float:left;
+}
