@@ -1,8 +1,10 @@
+<!doctype html>
 <html>
 <head>
-	<title>Smdrive</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<meta charset="utf-8">
+<title>Smdrive</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 	<script type="text/javascript">
 	var v;
 	jQuery(document).ready(function( $ ){
@@ -34,45 +36,62 @@
 	});
 	</script>
 </head>
+
 <body>
-	<header>
-	<div id="pt1">
-		<a href="#"><img src="recorte.png" alt="Smdrive"></a>
-		<form>
-			<input type="text">
-		</form>
-	</div>
-	<div id="pt2">
-		<div id="buttonNovo">
-			<a href="#" class="myButton">Novo</a>
-			<div id ="opts">
-				<option value="NPasta">Nova Pasta</option>
-				<option value="NArq">Upload de arquivo</option>	
-			</div>
+	<div id="pagina_home">    
+    	<header>
+        
+		<section id="logo">
+			<a href="#"><img src= img/recorte.png alt="smdrive"></a>
+        </section>
+        <section id="busca">                      
+			<form>
+            	
+				<input type="text">
+		  	</form>          
+         </section> 
+         
+        <section id="pt2">
+			<div id="buttonNovo">
+				<a href="#" class="myButton">Novo</a>
+				<div id ="opts">
+					<option value="NPasta">Nova Pasta</option>
+					<option value="NArq">Upload de arquivo</option>	
+				</div>
 			
-		</div>
-		<div id="caminho">
+			</div>
+			<section id="caminho">
 			<h1 align=""><a href="#">Migalha</a>><a href="#">1</a>><a href="#">2</a>><a href="#">3</a></h1>
-		</div>
-	</div>
-	</header>
+			</section>
+		</section>
+              
+        </header>
+        <section id="corpo">
+        	<section id="menu">
+				<nav>
+					<a href="#">Documentos</a><br>
+					<a href="#">Compartilhado comigo</a><br>
+					<a href="#">Smdrive</a><br>
+				</nav>
+			</section>
 
-	<div id="header">
-	</div>
-
-	<section id="menu">
-		<div>
-			<a href="#">Documentos</a><br>
-			<a href="#">Compartilhado comigo</a><br>
-			<a href="#">Smdrive</a><br>
-		</div>
-	</section>
-
-	<section id="body">
-	<h1>Smdrive</h1>
-	</section>
-	<script type="text/javascript">
-		document.getElementById("header").style.height = document.getElementsByTagName("header")[0].offsetHeight;
-	</script>
+			<section id="body">
+			<div id ="Lista">
+				<table border="0" style="">
+					<tr style="">
+						<td ><div class="pasta"></div>Teste Aqui</td>
+						<td ><img src="recorte.png" align="absmiddle"  />Pasta 2</td>
+						<td ><img src="recorte.png" align="absmiddle"  />Pasta 3</td>
+						<td ><img src="recorte.png" align="absmiddle"  />Pt 1</td>
+					</tr>
+				</table>
+			</div>
+			</section>
+			<script type="text/javascript">
+			document.getElementById("header").style.height = document.getElementsByTagName("header")[0].offsetHeight;
+			</script>
+		</section>
+        
+</div>
 </body>
 </html>

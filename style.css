@@ -1,89 +1,149 @@
-*{margin:0px;}
-#body,body{
+*{
+	margin-top: auto;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+	padding-right: 0px;
+}
+body{
+	position: absolute;
+    width: 100%;
+}
+
+#pagina_home{
 	width:100%;
-}
-#body,body{
-	background-color: #EBEBEB;
-}
-#opts{
-	height: auto;
-	width: auto;
-	background-color: #fff;
-}
-
-a:link, option{
-text-decoration:none;color:#145D7F;
-}
-a:visited , option{
-color:#145D7F;
-}
-a:hover , option:hover{
-color:#29BBFF;
-}
-.myButton{
-	background-color: #29bbff;
-    
-    color: white;
-    border: 2px solid white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-left: 20px;
-}
-.myButton:hover{
-	border: 2px solid #29bbff;
-	background-color: white;
-	color: #29bbff;
-}
-
-header,#header{
-	height: 20%;
-	width: 100%;
-	background-color: #fff;
+	height: 500px;
+	margin: auto;
 }
 header{
-	position: fixed;
-	display: table;
+	width: 100%;
+	height: 165px;
+	
 }
-header #pt1{
-	height: 50%;
+#busca{
+	height: 100px;
+	width: 75%;
+	margin-left: 5%;
+	float: left;
 }
-header #pt2 #buttonNovo{
-	float:left;
-	margin-left: 2% ; 
-	margin-right: 8% ;  
 
+#busca form input {
+	margin-top: 15px;
+	width: 75%;
+	height: 50px;
+	border-radius: 5px;
+		
 }
-header #pt2 #caminho{
+#logo img{
+	width:150px;
+	margin-top: 20px;
+	margin-left: 1%;
+	height:auto;
+	float: left;		
+}
+
+#pt2 #buttonNovo{
+	float:left;
+	margin-left: 1%;
+	margin-right: 8%;  
+}
+#pt2 #caminho{
 	float:left;
 	margin-left: 5% ; 
 	margin-right: 5% ; 
 }
-header #pt1 img{
-	width:15%;
-	height:50%;
-	float: left;
-	margin-left: 2% ; 
-	margin-right: 3% ; 
+ {
+	background-color: #29bbff;    
+    border: 2px solid white;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+}
+a.myButton:visited, .myButton {
+	background-color: #29bbff;    
+    border: 2px solid white;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+}
+a.myButton:visited:hover,.myButton:hover{
+	border: 2px solid #29bbff;
+	background-color: white;
+	color: #29bbff;
+}
+#caminho{
+	float:left;
+	margin-top:15px;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+#opts{
+	    position: absolute;
+	height: auto;
+	width: auto;
+	background-color: #fff;
+}
+a:link, option{
+	text-decoration:none;
+	color:#145D7F;
+}
+a:visited , option{
+	color:#145D7F;
+}
+a:hover , option:hover{
+	color:#29BBFF;
+}
+#corpo{
+	background-color: #E4E4E4;
+	height: 100%;
+	-webkit-box-shadow: inset 0 1px 20px #575757;
+	box-shadow: inset 0 1px 20px #575757;
+}
+#menu{
+	width: 20%;
+	height: 100%; 
+	float:left;
+}
+#menu nav{
+	margin-top:5%; 
+	margin-left:5%; 
+}
+#menu nav a{
+	margin-bottom: 1.5%;
+	
 }
 #body{
 	height: 100%;
 	width: 80%;
 	float: left;
 }
-#menu{
-	width: 20%;
+
+#Lista,#Lista table{
 	height: 100%;
-	//background-color:#C1C1C1; 
-	float:left;
+	width: 100%;
 }
-#menu div{
-	margin-top:5%; 
-	margin-left:5%; 
+#Lista table tr{
+	background-color: #ccc;
+	height: 100%;
+	width: 100%;
 }
-#menu div a{
-	margin-bottom: 1.5%;
+#Lista table tr td{
+	background-color: #ddd;
+	font-size:8.5px; 
+	font-family:arial;
 	float:left;
+	width: 30%;
+	height: 10%;
+	margin-left:2%; 
+	margin-bottom: 3%; 
+}
+#Lista table tr td img{
+	background-color: #000;
+	width:50%;
+	height: auto;
 }
